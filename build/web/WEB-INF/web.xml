@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>EnrollmentServlet</servlet-name>
+        <servlet-class>com.group1.controller.EnrollmentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewEnrollment</servlet-name>
+        <servlet-class>com.group1.controller.NewEnrollment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CoursesServlet</servlet-name>
+        <servlet-class>com.group1.controller.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CourseEnrollment</servlet-name>
+        <servlet-class>com.group1.controller.CourseEnrollment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnrollmentServlet</servlet-name>
+        <url-pattern>/enrollment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewEnrollment</servlet-name>
+        <url-pattern>/new_enroll</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CoursesServlet</servlet-name>
+        <url-pattern>/courses</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseEnrollment</servlet-name>
+        <url-pattern>/course_enroll</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
